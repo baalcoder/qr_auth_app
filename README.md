@@ -302,7 +302,7 @@ Este proyecto está licenciado bajo la Licencia MIT - ver el archivo [LICENSE](L
 
 ## 👥 Autores
 
-- **Sebastian balvin Mendoza** - *v1.0* - [baalcoder](https://github.com/baalcoder)
+- **Sebastian Balvin Mendoza** - *v1.0* - [baalcoder](https://github.com/baalcoder)
 
 ## 🙏 Agradecimientos
 
