@@ -16,7 +16,6 @@ Una aplicación Flutter moderna que combina seguridad biométrica con funcionali
 
 ### 📱 Escaneo QR Avanzado
 - Implementación nativa con CameraX
-- Procesamiento en tiempo real
 - Almacenamiento local con SQLite
 - Historial de escaneos con timestamps
 
@@ -24,7 +23,6 @@ Una aplicación Flutter moderna que combina seguridad biométrica con funcionali
 - Implementación de tendencias UI/UX 2025
 - Glassmorphism y efectos de profundidad
 - Animaciones y transiciones fluidas
-- Modo oscuro optimizado
 
 ### 🏗️ Arquitectura
 - Clean Architecture
@@ -304,10 +302,9 @@ Este proyecto está licenciado bajo la Licencia MIT - ver el archivo [LICENSE](L
 
 ## 👥 Autores
 
-- **Tu Nombre** - *Trabajo Inicial* - [baalcoder](https://github.com/baalcoder)
+- **Sebastian balvin Mendoza** - *v1.0* - [baalcoder](https://github.com/baalcoder)
 
 ## 🙏 Agradecimientos
 
 - Flutter Team por el excelente framework
 - La comunidad de Flutter por su apoyo
-- Todos los contribuidores que han ayudado a mejorar este proyecto
