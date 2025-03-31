@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "589011317229",
+    "firebase_url": "https://balcoder-portfolio-default-rtdb.firebaseio.com",
+    "project_id": "balcoder-portfolio",
+    "storage_bucket": "balcoder-portfolio.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589011317229:android:f16aa6781ceccd8b81f7e4",
+        "android_client_info": {
+          "package_name": "com.example.qr_auth_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "589011317229-f345od0841k3igdm1a6cvponb1piiu1c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8uh87NGlQH2ZQeHP5E2CxrZdraZcDZ3k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "589011317229-f345od0841k3igdm1a6cvponb1piiu1c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

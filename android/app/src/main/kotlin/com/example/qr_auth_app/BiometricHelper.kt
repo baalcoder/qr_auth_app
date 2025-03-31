@@ -21,7 +21,7 @@ class BiometricHelper(private val activity: FragmentActivity) {
         negativeButtonText: String
     ): AuthResult = suspendCoroutine { continuation ->
         val executor = ContextCompat.getMainExecutor(activity)
-        
+
         val promptInfo = BiometricPrompt.PromptInfo.Builder()
             .setTitle(title)
             .setSubtitle(subtitle)
@@ -32,25 +32,17 @@ class BiometricHelper(private val activity: FragmentActivity) {
             object : BiometricPrompt.AuthenticationCallback() {
                 override fun onAuthenticationError(errorCode: Int, errString: CharSequence) {
                     super.onAuthenticationError(errorCode, errString)
-                    val result = AuthResult()
-                    result.success = false
-                    result.error = errString.toString()
-                    continuation.resumeWith(Result.success(result))
+                    continuation.resumeWith(Result.success(AuthResult(false, errString.toString())))
                 }
 
                 override fun onAuthenticationSucceeded(result: BiometricPrompt.AuthenticationResult) {
                     super.onAuthenticationSucceeded(result)
-                    val authResult = AuthResult()
-                    authResult.success = true
-                    continuation.resumeWith(Result.success(authResult))
+                    continuation.resumeWith(Result.success(AuthResult(true, null)))
                 }
 
                 override fun onAuthenticationFailed() {
                     super.onAuthenticationFailed()
-                    val result = AuthResult()
-                    result.success = false
-                    result.error = "Authentication failed"
-                    continuation.resumeWith(Result.success(result))
+                    continuation.resumeWith(Result.success(AuthResult(false, "Authentication failed")))
                 }
             })
 

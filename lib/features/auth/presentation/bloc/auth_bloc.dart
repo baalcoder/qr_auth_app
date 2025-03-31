@@ -5,6 +5,7 @@ import 'package:qr_auth_app/core/pigeon/auth_qr_api.g.dart';
 abstract class AuthEvent {}
 
 class AuthenticateWithBiometric extends AuthEvent {}
+
 class AuthenticateWithPIN extends AuthEvent {
   final String pin;
   AuthenticateWithPIN(this.pin);
@@ -14,8 +15,11 @@ class AuthenticateWithPIN extends AuthEvent {
 abstract class AuthState {}
 
 class AuthInitial extends AuthState {}
+
 class AuthLoading extends AuthState {}
+
 class AuthSuccess extends AuthState {}
+
 class AuthFailure extends AuthState {
   final String error;
   AuthFailure(this.error);
@@ -65,6 +69,17 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     AuthenticateWithPIN event,
     Emitter<AuthState> emit,
   ) async {
-    // Implementar autenticación con PIN
+    emit(AuthLoading());
+    try {
+      // En un caso real, deberías validar contra un PIN almacenado de forma segura
+      // Por ahora, usaremos un PIN de ejemplo: "1234"
+      if (event.pin == "1234") {
+        emit(AuthSuccess());
+      } else {
+        emit(AuthFailure('PIN incorrecto'));
+      }
+    } catch (e) {
+      emit(AuthFailure(e.toString()));
+    }
   }
 }

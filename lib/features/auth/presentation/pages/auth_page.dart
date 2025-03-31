@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:qr_auth_app/features/auth/presentation/bloc/auth_bloc.dart';
+import 'package:qr_auth_app/features/auth/presentation/widgets/pin_dialog.dart';
 import 'package:qr_auth_app/features/qr_scanner/presentation/pages/qr_scanner_page.dart';
 
 class AuthPage extends StatelessWidget {
@@ -42,8 +43,16 @@ class AuthPage extends StatelessWidget {
                   ),
                   const SizedBox(height: 16),
                   TextButton(
-                    onPressed: () {
-                      // TODO: Implementar diálogo de PIN
+                    onPressed: () async {
+                      final pin = await showDialog<String>(
+                        context: context,
+                        barrierDismissible: false,
+                        builder: (context) => const PinDialog(),
+                      );
+                      
+                      if (pin != null && context.mounted) {
+                        context.read<AuthBloc>().add(AuthenticateWithPIN(pin));
+                      }
                     },
                     child: const Text('Use PIN Instead'),
                   ),
