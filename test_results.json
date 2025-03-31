@@ -1,0 +1,52 @@
+{"protocolVersion":"0.1.1","runnerVersion":null,"pid":64323,"type":"start","time":0}
+{"suite":{"id":0,"platform":"vm","path":"/Users/balcoder/Desktop/qr_auth_app/test/features/qr_scanner/domain/models/qr_code_test.dart"},"type":"suite","time":0}
+{"test":{"id":1,"name":"loading /Users/balcoder/Desktop/qr_auth_app/test/features/qr_scanner/domain/models/qr_code_test.dart","suiteID":0,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":0}
+{"suite":{"id":2,"platform":"vm","path":"/Users/balcoder/Desktop/qr_auth_app/test/features/qr_scanner/bloc/qr_scanner_bloc_test.dart"},"type":"suite","time":3}
+{"test":{"id":3,"name":"loading /Users/balcoder/Desktop/qr_auth_app/test/features/qr_scanner/bloc/qr_scanner_bloc_test.dart","suiteID":2,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":3}
+{"suite":{"id":4,"platform":"vm","path":"/Users/balcoder/Desktop/qr_auth_app/test/features/auth/bloc/auth_bloc_test.dart"},"type":"suite","time":3}
+{"test":{"id":5,"name":"loading /Users/balcoder/Desktop/qr_auth_app/test/features/auth/bloc/auth_bloc_test.dart","suiteID":4,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":3}
+{"count":3,"time":3,"type":"allSuites"}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null,"observatoryUri":null}}]
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null,"observatoryUri":null}}]
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null,"observatoryUri":null}}]
+{"testID":3,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":1658}
+{"group":{"id":6,"suiteID":2,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":6,"line":null,"column":null,"url":null},"type":"group","time":1661}
+{"test":{"id":7,"name":"initial state should be QRScannerInitial","suiteID":2,"groupIDs":[6],"metadata":{"skip":false,"skipReason":null},"line":30,"column":3,"url":"file:///Users/balcoder/Desktop/qr_auth_app/test/features/qr_scanner/bloc/qr_scanner_bloc_test.dart"},"type":"testStart","time":1662}
+{"testID":1,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":1666}
+{"group":{"id":8,"suiteID":0,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":4,"line":null,"column":null,"url":null},"type":"group","time":1666}
+{"group":{"id":9,"suiteID":0,"parentID":8,"name":"QRCode","metadata":{"skip":false,"skipReason":null},"testCount":4,"line":5,"column":3,"url":"file:///Users/balcoder/Desktop/qr_auth_app/test/features/qr_scanner/domain/models/qr_code_test.dart"},"type":"group","time":1666}
+{"test":{"id":10,"name":"QRCode should create QRCode instance from map","suiteID":0,"groupIDs":[8,9],"metadata":{"skip":false,"skipReason":null},"line":6,"column":5,"url":"file:///Users/balcoder/Desktop/qr_auth_app/test/features/qr_scanner/domain/models/qr_code_test.dart"},"type":"testStart","time":1666}
+{"testID":5,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":1687}
+{"group":{"id":11,"suiteID":4,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":3,"line":null,"column":null,"url":null},"type":"group","time":1687}
+{"test":{"id":12,"name":"initial state should be AuthInitial","suiteID":4,"groupIDs":[11],"metadata":{"skip":false,"skipReason":null},"line":23,"column":3,"url":"file:///Users/balcoder/Desktop/qr_auth_app/test/features/auth/bloc/auth_bloc_test.dart"},"type":"testStart","time":1687}
+{"testID":10,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1700}
+{"test":{"id":13,"name":"QRCode should convert QRCode instance to map","suiteID":0,"groupIDs":[8,9],"metadata":{"skip":false,"skipReason":null},"line":24,"column":5,"url":"file:///Users/balcoder/Desktop/qr_auth_app/test/features/qr_scanner/domain/models/qr_code_test.dart"},"type":"testStart","time":1700}
+{"testID":13,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1702}
+{"test":{"id":14,"name":"QRCode should handle null id when creating from map","suiteID":0,"groupIDs":[8,9],"metadata":{"skip":false,"skipReason":null},"line":42,"column":5,"url":"file:///Users/balcoder/Desktop/qr_auth_app/test/features/qr_scanner/domain/models/qr_code_test.dart"},"type":"testStart","time":1703}
+{"testID":14,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1705}
+{"test":{"id":15,"name":"QRCode should handle null id when converting to map","suiteID":0,"groupIDs":[8,9],"metadata":{"skip":false,"skipReason":null},"line":59,"column":5,"url":"file:///Users/balcoder/Desktop/qr_auth_app/test/features/qr_scanner/domain/models/qr_code_test.dart"},"type":"testStart","time":1705}
+{"testID":15,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1708}
+{"testID":7,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1713}
+{"group":{"id":16,"suiteID":2,"parentID":6,"name":"StartScanning","metadata":{"skip":false,"skipReason":null},"testCount":2,"line":34,"column":3,"url":"file:///Users/balcoder/Desktop/qr_auth_app/test/features/qr_scanner/bloc/qr_scanner_bloc_test.dart"},"type":"group","time":1713}
+{"test":{"id":17,"name":"StartScanning emits [QRScannerStarted] when scanner starts successfully","suiteID":2,"groupIDs":[6,16],"metadata":{"skip":false,"skipReason":null},"line":35,"column":5,"url":"file:///Users/balcoder/Desktop/qr_auth_app/test/features/qr_scanner/bloc/qr_scanner_bloc_test.dart"},"type":"testStart","time":1713}
+{"testID":12,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1720}
+{"group":{"id":18,"suiteID":4,"parentID":11,"name":"AuthenticateWithPIN","metadata":{"skip":false,"skipReason":null},"testCount":2,"line":27,"column":3,"url":"file:///Users/balcoder/Desktop/qr_auth_app/test/features/auth/bloc/auth_bloc_test.dart"},"type":"group","time":1720}
+{"test":{"id":19,"name":"AuthenticateWithPIN emits [AuthLoading, AuthSuccess] when PIN is correct","suiteID":4,"groupIDs":[11,18],"metadata":{"skip":false,"skipReason":null},"line":28,"column":5,"url":"file:///Users/balcoder/Desktop/qr_auth_app/test/features/auth/bloc/auth_bloc_test.dart"},"type":"testStart","time":1720}
+{"testID":17,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1729}
+{"test":{"id":20,"name":"StartScanning emits [QRScannerError] when scanner fails to start","suiteID":2,"groupIDs":[6,16],"metadata":{"skip":false,"skipReason":null},"line":52,"column":5,"url":"file:///Users/balcoder/Desktop/qr_auth_app/test/features/qr_scanner/bloc/qr_scanner_bloc_test.dart"},"type":"testStart","time":1730}
+{"testID":20,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1734}
+{"group":{"id":21,"suiteID":2,"parentID":6,"name":"DeleteQRCode","metadata":{"skip":false,"skipReason":null},"testCount":1,"line":70,"column":3,"url":"file:///Users/balcoder/Desktop/qr_auth_app/test/features/qr_scanner/bloc/qr_scanner_bloc_test.dart"},"type":"group","time":1734}
+{"test":{"id":22,"name":"DeleteQRCode emits [QRScannerError] when deletion fails","suiteID":2,"groupIDs":[6,21],"metadata":{"skip":false,"skipReason":null},"line":72,"column":5,"url":"file:///Users/balcoder/Desktop/qr_auth_app/test/features/qr_scanner/bloc/qr_scanner_bloc_test.dart"},"type":"testStart","time":1734}
+{"testID":22,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1738}
+{"group":{"id":23,"suiteID":2,"parentID":6,"name":"LoadQRCodes","metadata":{"skip":false,"skipReason":null},"testCount":2,"line":90,"column":3,"url":"file:///Users/balcoder/Desktop/qr_auth_app/test/features/qr_scanner/bloc/qr_scanner_bloc_test.dart"},"type":"group","time":1738}
+{"test":{"id":24,"name":"LoadQRCodes emits [QRScannerStarted] with loaded codes","suiteID":2,"groupIDs":[6,23],"metadata":{"skip":false,"skipReason":null},"line":91,"column":5,"url":"file:///Users/balcoder/Desktop/qr_auth_app/test/features/qr_scanner/bloc/qr_scanner_bloc_test.dart"},"type":"testStart","time":1738}
+{"testID":19,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1739}
+{"test":{"id":25,"name":"AuthenticateWithPIN emits [AuthLoading, AuthFailure] when PIN is incorrect","suiteID":4,"groupIDs":[11,18],"metadata":{"skip":false,"skipReason":null},"line":42,"column":5,"url":"file:///Users/balcoder/Desktop/qr_auth_app/test/features/auth/bloc/auth_bloc_test.dart"},"type":"testStart","time":1739}
+{"testID":24,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1741}
+{"test":{"id":26,"name":"LoadQRCodes emits [QRScannerError] when loading fails","suiteID":2,"groupIDs":[6,23],"metadata":{"skip":false,"skipReason":null},"line":114,"column":5,"url":"file:///Users/balcoder/Desktop/qr_auth_app/test/features/qr_scanner/bloc/qr_scanner_bloc_test.dart"},"type":"testStart","time":1741}
+{"testID":25,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1742}
+{"testID":26,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1745}
+{"success":true,"type":"done","time":1749}
