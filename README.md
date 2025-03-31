@@ -103,8 +103,6 @@ qr_auth_app/
 │   │   │   └── presentation/     # UI y estado
 │   │   │       ├── bloc/
 │   │   │       │   ├── auth_bloc.dart
-│   │   │       │   ├── auth_event.dart
-│   │   │       │   └── auth_state.dart
 │   │   │       ├── pages/
 │   │   │       │   └── auth_page.dart
 │   │   │       └── widgets/
@@ -118,8 +116,6 @@ qr_auth_app/
 │   │       └── presentation/     # UI y estado
 │   │           ├── bloc/
 │   │           │   ├── qr_scanner_bloc.dart
-│   │           │   ├── qr_scanner_event.dart
-│   │           │   └── qr_scanner_state.dart
 │   │           └── pages/
 │   │               └── qr_scanner_page.dart
 │   │
